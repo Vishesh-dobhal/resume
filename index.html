@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --accent-color: #e74c3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9em;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .project,
+        .education {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .project p,
+        .education p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .skills,
+        .languages,
+        .interests,
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill,
+        .language,
+        .interest,
+        .certificate {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .skill:hover,
+        .language:hover,
+        .interest:hover,
+        .certificate:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+
+            header,
+            main {
+                padding: 20px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+            }
+
+            .skill:hover,
+            .language:hover,
+            .interest:hover,
+            .certificate:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Vishesh Dobhal</h1>
+            <div class="contact-info">
+                <span>📧 vaishdobhal122@gmail.com</span>
+                <span>📱 9927373301</span>
+                <span>📍 Dehradun, Uttrakhand</span>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p>Highly motivated and dedicated fresher seeking an entry-level
+                position in (industry/field) to apply my (skills/education) and
+                contribute to the growth and success of the organization. Eager to
+                learn and develop professionally while utilizing my strong
+                (communication/problem-solving/analytical) skills to positively
+                impact the team and achieve company objectives.</p>
+            </section>
+
+           
+
+            <section>
+                <h2>Education</h2>
+                <div class="education">
+                    <h3>MCA</h3>
+                    <p>Tula's Institute/Uttrakhand Technical University</p>
+                    <p>2020-2022</p>
+                </div>
+
+                <div class="education">
+                    <h3>BCA</h3>
+                    <p>Tula's Institute/Uttrakhand Technical University</p>
+                    <p>2017-2020</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>PORTFOLIO</h3>
+                    <a href="https://vishesh-dobhal.github.io/PortfOliO-/">https://vishesh-dobhal.github.io/PortfOliO-/</a>
+                    <ul>
+                        <li>Technologies used: [HTML], [CSS], [BOOTSTRAP]</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Weather App</h3>
+                    <a href="https://weathe-r-app.netlify.app/">https://weathe-r-app.netlify.app/</a>
+                    <ul>
+                        <li>Technologies used: [React js], [Tailwind css]</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>TODO List</h3>
+                    <a href="https://to-do-list-86c0cd.netlify.app/">https://to-do-list-86c0cd.netlify.app/</a>
+                    <ul>
+                        <li>Technologies used: [React js], [Tailwind css]</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JS</span>
+                    <span class="skill">REACT JS</span>
+                    <span class="skill">TAILWIND CSS</span>
+                    <span class="skill">BOOTSTRAP</span>
+                    <span class="skill">NODE JS</span>
+                    <span class="skill">POSTMAN</span>
+                    <span class="skill">EXPRESS JS</span>
+                    <span class="skill">GITHUB</span>
+                    <span class="skill">NETLIFY</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Languages</h2>
+                <div class="languages">
+                    <span class="language">English</span>
+                    <span class="language">Hindi</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Interests</h2>
+                <div class="interests">
+                    <span class="interest">Video Editing</span>
+                    <span class="interest">Sports</span>
+                    <span class="interest">Travelling</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Certificates</h2>
+                <div class="certificates">
+                    <span class="certificate">Python Basic Certificate from IIT Kanpur.</span>
+                    <span class="certificate">React Basic Certificate from Udemy.</span>
+                    <span class="certificate">Full Stack Development Certificate from Brillica Services</span>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
